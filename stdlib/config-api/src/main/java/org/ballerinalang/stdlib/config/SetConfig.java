@@ -60,7 +60,7 @@ public class SetConfig extends BlockingNativeCallableUnit {
         } else if (type == BTypes.typeFloat) {
             CONFIG_REGISTRY.addConfiguration(configKey, ((BFloat) configValue).floatValue());
         } else if (type == BTypes.typeBoolean) {
-            CONFIG_REGISTRY.addConfiguration(configKey, ((BBoolean) configValue).floatValue());
+            CONFIG_REGISTRY.addConfiguration(configKey, ((BBoolean) configValue).booleanValue());
         }
 
         context.setReturnValues();
